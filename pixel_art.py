@@ -23,6 +23,30 @@ def define_bee():
 
     return image_mat
 
+def define_emo_bee():
+    import numpy as np
+
+    # make an empty numpy array for storing the image
+    image_mat = np.full((16, 16, 3), 1.0)
+
+    # define some colours
+    light_purple = [0.8, 0.5, 1.0]
+    purple = [0.7, 0.1, 0.9]
+    teal = [0, 0.85, 0.65]
+
+    # specify which pixels are which colour
+    image_mat[7:11, 2] = light_purple
+    image_mat[6:12, 3:5] = light_purple
+    image_mat[6:12, 5:7] = purple
+    image_mat[6:12, 7:9] = light_purple
+    image_mat[6:12, 9:11] = purple
+    image_mat[6:12, 11:13] = light_purple
+    image_mat[7:11, 13] = light_purple
+    image_mat[4:6, 5:11] = teal
+    image_mat[3, 6:10] = teal
+    
+    return image_mat
+
 def define_bee_pink():
     import numpy as np
 
@@ -55,8 +79,8 @@ def define_butterfly():
     image_mat = np.full((16, 16, 3), 1.0)
 
     # define some colours
-    pink = [1, 0, 1]
-    different_pink = [1, 0.85, 1]
+    pink = [0.7, 0.1, 0.9]
+    different_pink = [0.8, 0.5, 1.0]
 
     # specify which pixels are which colour
     c = 8
@@ -110,3 +134,5 @@ barbee = define_bee_pink()
 plot_image(barbee)
 butterfly = define_butterfly()
 plot_image(butterfly)
+emobee = define_emo_bee()
+plot_image(emobee)
