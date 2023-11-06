@@ -5,8 +5,8 @@ def define_bee():
     image_mat = np.full((16, 16, 3), 1.0)
 
     # define some colours
-    black = [0, 0, 0]
-    yellow = [1.0, 0.85, 0]
+    black = [(1/255), 0, (1/255)]
+    yellow = [(1/255), 0.85, (1/255)]
     grey = [0.65] * 3
 
     # specify which pixels are which colour
