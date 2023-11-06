@@ -18,8 +18,8 @@ def define_bee():
     image_mat[6:12, 9:11] = yellow
     image_mat[6:12, 11:13] = black
     image_mat[7:11, 13] = black
-    image_mat[4:6, 5:11] = grey
-    image_mat[3, 6:10] = grey
+    image_mat[4:6, 5:11] = pink
+    image_mat[3, 6:10] = pink
     
     return image_mat
     
