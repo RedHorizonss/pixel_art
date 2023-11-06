@@ -8,7 +8,7 @@ def define_bee():
     black = [0, 0, 0]
     yellow = [1.0, 0.85, 0]
     grey = [0.65] * 3
-    pink = [1,0,1]
+    pink = [1.0,0,1.0]
 
     # specify which pixels are which colour
     image_mat[7:11, 2] = pink
