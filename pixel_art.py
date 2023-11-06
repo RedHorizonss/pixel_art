@@ -5,22 +5,20 @@ def define_bee():
     image_mat = np.full((16, 16, 3), 1.0)
 
     # define some colours
-    black = [0, 0, 0]
-    yellow = [0.7, 0.1, 0.9]
-    grey = [0, 0.85, 0.65]
-    pink = [1,0,1]
-
+    light_purple = [0.8, 0.5, 1.0]
+    purple = [0.7, 0.1, 0.9]
+    teal = [0, 0.85, 0.65]
 
     # specify which pixels are which colour
-    image_mat[7:11, 2] = pink
-    image_mat[6:12, 3:5] = pink
-    image_mat[6:12, 5:7] = yellow
-    image_mat[6:12, 7:9] = pink
-    image_mat[6:12, 9:11] = yellow
-    image_mat[6:12, 11:13] = pink
-    image_mat[7:11, 13] = pink
-    image_mat[4:6, 5:11] = pink
-    image_mat[3, 6:10] = pink
+    image_mat[7:11, 2] = light_purple
+    image_mat[6:12, 3:5] = light_purple
+    image_mat[6:12, 5:7] = purple
+    image_mat[6:12, 7:9] = light_purple
+    image_mat[6:12, 9:11] = purple
+    image_mat[6:12, 11:13] = light_purple
+    image_mat[7:11, 13] = light_purple
+    image_mat[4:6, 5:11] = teal
+    image_mat[3, 6:10] = teal
     
     return image_mat
     
@@ -31,8 +29,8 @@ def define_butterfly():
     image_mat = np.full((16, 16, 3), 1.0)
 
     # define some colours
-    pink = [1, 0, 1]
-    different_pink = [1, 0.85, 1]
+    pink = [0.7, 0.1, 0.9]
+    different_pink = [0.8, 0.5, 1.0]
 
     # specify which pixels are which colour
     c = 8
