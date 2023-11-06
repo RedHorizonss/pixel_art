@@ -6,12 +6,9 @@ def define_bee():
 
     # define some colours
     black = [0, 0, 0]
-    yellow = [1.0, 0.85, 0]
-<<<<<<< HEAD
+    yellow = [0.7, 0.1, 0.9]
     grey = [0, 0.85, 0.65]
-=======
-    grey = [0.65, 0.71, 0.02]
->>>>>>> 63c2f98364e13c65dbeddf15846ec669575a00ac
+
 
     # specify which pixels are which colour
     image_mat[7:11, 2] = black
@@ -34,7 +31,7 @@ def define_butterfly():
 
     # define some colours
     black = [0, 0, 0]
-    blue = [0.2, 0.4, 0.8]
+    blue = [1.0, 0.4, 0.8]
 
     # specify which pixels are which colour
     c = 8
