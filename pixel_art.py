@@ -7,7 +7,7 @@ def define_bee():
     # define some colours
     black = [0, 0, 0]
     yellow = [1.0, 0.85, 0]
-    grey = [0.65] * 3
+    grey = [0.65, 0.71, 0.02]
 
     # specify which pixels are which colour
     image_mat[7:11, 2] = black
