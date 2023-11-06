@@ -35,7 +35,7 @@ def define_bee_pink():
 
 
     # specify which pixels are which colour
-    image_mat[7:11, 2] = black
+    image_mat[7:11, 2] = pink
     image_mat[6:12, 3:5] = pink
     image_mat[6:12, 5:7] = pink_diff
     image_mat[6:12, 7:9] = pink
